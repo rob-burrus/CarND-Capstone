@@ -55,7 +55,6 @@ class TLDetector(object):
         sub3 = rospy.Subscriber('/vehicle/traffic_lights', TrafficLightArray, self.traffic_cb)
         sub6 = rospy.Subscriber('/image_color', Image, self.image_cb)
 
-
         # loop at max 2 Hz, detecting traffic lights
         tl_detect_rate = rospy.Rate(2)
         while True:
